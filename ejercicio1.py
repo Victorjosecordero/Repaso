@@ -3,10 +3,10 @@ def vocales():
     while continuar:
         vocal= input('Escriba una letra: ')
         if vocal.lower() in 'aeiou':
-            return 'VOCAL'
+            print('VOCAL')
         elif vocal ==' ':
-            continuar == False
+            continuar = False
         else:
-            return 'No vocal'
+            print('No vocal')
 
 print(vocales())
