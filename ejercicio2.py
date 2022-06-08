@@ -3,6 +3,7 @@ Hacer un programa que pide caracteres al usuario y los vaya guardando,de formas 
 Tambien debe contar cuantas hay de cada una de ellas.
 """
 
+
 def pedir_caracteres():
     vocales = []
     consonantes = []
@@ -14,9 +15,14 @@ def pedir_caracteres():
             vocales.append(pedir)
         elif pedir in 'BCDFGHJKLMÑPQRSTVWXYZbcdfghjklmñpqrstvwxyz':
             consonantes.append(pedir)
-        else:
+        elif pedir == ' ':
             continuar = False
-    print(vocales)
-    print(consonantes)
+        else:
+            print('Introduzca solo un caracter')
+
+    
+    
+    print(f'Vocales:{vocales},Hay:{len(vocales)}')
+    print(f'Consonantes:{consonantes},Hay:{len(consonantes)}')
 
 pedir_caracteres()
